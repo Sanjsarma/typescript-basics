@@ -2,6 +2,7 @@ let loginUser = (name: string, email: string, isLoggedIn: boolean = false) => {}
 
 loginUser("sanj", "s@s.com");
 
+//parameter type annotation
 function getValue(myVal: number){
     if(myVal > 5){
         return true;
@@ -21,6 +22,12 @@ heroes.map((hero): string => {
     return (`hero is ${hero}`);
 })
 
+//arrow function
+const getHello = (s: string): string => {
+    return "";
+}
+
+//return type annotation
 //return type void
 function consoleError(errmsg: string): void{
     console.log(errmsg);
