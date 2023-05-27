@@ -11,8 +11,10 @@ function getHero() {
     // return true; : accepted
 }
 hero = getHero();
+//accepts parameter of type number, expects result to be of type number
 function addTwo(num) {
-   // return num + 2;
-   return "hello";
+    return num + 2;
+    //return "hello";
 }
 console.log(addTwo(3));
+var seatAllotment;

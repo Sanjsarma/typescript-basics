@@ -22,5 +22,9 @@ function addTwo(num: number): number{
 }
 
 console.log(addTwo(3));
+
+let seatAllotment: "aisle" | "middle" | "window";
+// seatAllotment = "crew" error
+
 //temporary fix for cannot redeclare block scoped variable error 
 export {}
