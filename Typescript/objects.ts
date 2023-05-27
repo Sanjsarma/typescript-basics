@@ -27,6 +27,36 @@ function userCreation(user: User): User {
     return ({name: "", email: "", isActive: false});
 }
 
+//read only value for objexts; can be accessed outside the class but value cannot be changes
+type User1= {
+    readonly userId: number;
+    name: string;
+    email: string;
+    creditCardDetails?: number; //optional
+}
+
+let user1: User1 = {
+    userId: 1,
+    name: "sanj",
+    email: "sanj@gmail.com"
+}
+
+user1.email = "san@gmail.com";
+// user1.userId = 2; error as it is a read only value
+
+type cardNumber = {
+    cardnumber : string;
+}
+
+type cardDate = {
+    carddate: string;
+}
+
+//defining new type based on combo of previous types
+type cardDetails = cardNumber & cardDate & {
+    cvv: number;
+}
+
 type Point = {
     x: number;
     y: number;
