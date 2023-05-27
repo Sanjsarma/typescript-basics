@@ -19,3 +19,5 @@ const twoDimArray: number[][] = [
 
 superHeros.push("spiderman");
 console.log(superHeros);
+
+export {}
